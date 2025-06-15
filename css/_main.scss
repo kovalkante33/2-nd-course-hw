@@ -2,6 +2,7 @@
     height: 800px;
     background: rgb(225, 255, 143);
     position: relative;
+    overflow: hidden;
 
     &__content {
         max-width: 768px;
