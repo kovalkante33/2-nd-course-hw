@@ -1,0 +1,130 @@
+@media (max-width: 376px) {
+    .center {
+        padding-left: calc(50% - 170px);
+        padding-right: calc(50% - 170px);
+    }
+
+    .header {
+        &__content {
+            padding: 147px 22px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 40px;
+            line-height: 49px;
+        }
+
+        &__prgf {
+            text-align: center;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__btn {
+            font-size: 16px;
+        }
+    }
+
+    .btn {
+        width: 285px;
+        height: 55px;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .games {
+        background: rgb(32, 32, 39);
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__title {
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding: 48px 0;
+        }
+
+        .game {
+            background-color: rgb(255, 255, 255);
+            border-radius: 27.22px;
+
+            &__card {
+                max-width: 343px;
+                box-sizing: border-box;
+                overflow: hidden;
+                border-radius: 27.22px;
+            }
+
+            &__title {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 39px;
+                letter-spacing: 0px;
+                text-align: left;
+                box-sizing: border-box;
+                padding: 30px 30px 8px;
+            }
+
+            &__desc {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0px;
+                text-align: left;
+                padding: 8px 30px 0;
+            }
+
+            &__btn {
+                width: 285px;
+                height: 55px;
+                box-sizing: border-box;
+                border: 1px solid rgb(32, 32, 39);
+                border-radius: 60px;
+                background: rgb(32, 32, 39);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 141.69%;
+                letter-spacing: 0%;
+                text-align: center;
+                margin: 32px 30px;
+            }
+        }
+
+        .game:nth-child(n+2) {
+            margin-top: 24px;
+        }
+
+        .game:last-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    .star-two {
+        width: 35px;
+        height: 35px;
+        padding-top: 97px;
+        padding-left: 37px;
+    }
+
+    .star-three {
+        width: 21px;
+        height: 21px;
+        top: 64px;
+        left: 91px;
+    }
+}
