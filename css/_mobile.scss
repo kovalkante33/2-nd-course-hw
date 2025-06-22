@@ -67,6 +67,7 @@
                 box-sizing: border-box;
                 overflow: hidden;
                 border-radius: 27.22px;
+                flex-direction: column;
             }
 
             &__title {
@@ -111,6 +112,10 @@
 
         .game:last-child {
             margin-bottom: 10px;
+        }
+
+        .game:nth-child(odd) .game__card {
+            flex-direction: column;
         }
     }
 

@@ -101,7 +101,7 @@ body {
 .content {
   background: rgb(32, 32, 39);
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 46px;
 }
 .content__title {
   color: rgb(255, 255, 255);
@@ -171,6 +171,77 @@ body {
 }
 .content__card:nth-child(2) {
   margin-top: 40px;
+}
+
+.games {
+  background: rgb(32, 32, 39);
+}
+.games__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.games__title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 46px 0 72px;
+}
+.games .game {
+  background-color: rgb(255, 255, 255);
+  border-radius: 27.22px;
+  width: 100%;
+}
+.games .game__card {
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 27.22px;
+}
+.games .game__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 48px 48px 12px;
+}
+.games .game__desc {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 12px 48px 0;
+}
+.games .game__btn {
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 36px 48px;
+}
+.games .game:nth-child(n+2) {
+  margin-top: 32px;
+}
+.games .game:last-child {
+  margin-bottom: 144px;
+}
+.games .game:nth-child(odd) .game__card {
+  flex-direction: row-reverse;
 }
 
 .footer {
@@ -245,6 +316,7 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 27.22px;
+    flex-direction: column;
   }
   .games .game__title {
     font-size: 32px;
@@ -283,6 +355,9 @@ body {
   }
   .games .game:last-child {
     margin-bottom: 10px;
+  }
+  .games .game:nth-child(odd) .game__card {
+    flex-direction: column;
   }
   .star-two {
     width: 35px;
