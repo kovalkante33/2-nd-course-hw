@@ -4,7 +4,7 @@
 // let password = 'пароль';
 
 // let answer = prompt('введите пароль');
-// if (answer == password) {
+// if (answer === password) {
 //     alert('Пароль введен верно');
 // } else {
 //     alert('Пароль введен неправильно')
@@ -75,7 +75,7 @@
 
 // if (isNaN(answer)) {
 //     alert('не число');
-// } else if (answer % 2 == 0) {
+// } else if (answer % 2 === 0) {
 //     alert('Число четное');
 // } else {
 //     alert('Число не четное');
@@ -83,17 +83,17 @@
 
 // Задание 2, 3
 
-let clientOS = prompt('Определение ОС');
-let clientDeviceYearAnswer = prompt('Год выпуска');
+let clientOS = Number(prompt('Укажите ОС Вашего устройства. Где 0 - iOS, 1 - Andoid'));
+let clientDeviceYearAnswer = Number(prompt('Год выпуска'));
 const clientDeviceYear = 2015;
 
-if (clientOS == 0 && clientDeviceYear <= clientDeviceYearAnswer) {
+if (clientOS === 0 && clientDeviceYear <= clientDeviceYearAnswer) {
     console.log('Установите версию приложения для iOS по ссылке');
-} else if (clientOS == 1 && clientDeviceYear <= clientDeviceYearAnswer) {
+} else if (clientOS === 1 && clientDeviceYear <= clientDeviceYearAnswer) {
     console.log('Установите версию приложения для Android по ссылке');
-} else if (clientOS == 0 && clientDeviceYear >= clientDeviceYearAnswer) {
+} else if (clientOS === 0 && clientDeviceYear >= clientDeviceYearAnswer) {
     console.log('Установите облегченную версию приложения для iOS по ссылке');
-} else if (clientOS == 0 && clientDeviceYear >= clientDeviceYearAnswer) {
+} else if (clientOS === 1 && clientDeviceYear >= clientDeviceYearAnswer) {
     console.log('Установите облегченную версию приложения для Android по ссылке');
 } else {
     console.log('Некорректные данные');
