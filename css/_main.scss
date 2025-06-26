@@ -86,7 +86,7 @@
 .content {
     background: rgb(32, 32, 39);
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 46px;
 
     &__title {
         color: rgb(255, 255, 255);
@@ -165,6 +165,87 @@
 
     &__card:nth-child(2) {
         margin-top: 40px;
+    }
+}
+
+.games {
+    background: rgb(32, 32, 39);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding: 46px 0 72px;
+    }
+
+    .game {
+        background-color: rgb(255, 255, 255);
+        border-radius: 27.22px;
+        width: 100%;
+
+        &__card {
+            display: flex;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 27.22px;
+        }
+
+        &__title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+            box-sizing: border-box;
+            padding: 48px 48px 12px;
+        }
+
+        &__desc {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding: 12px 48px 0;
+        }
+
+        &__btn {
+            width: 247px;
+            height: 66px;
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            margin: 36px 48px;
+        }
+    }
+
+    .game:nth-child(n+2) {
+        margin-top: 32px;
+    }
+
+    .game:last-child {
+        margin-bottom: 144px;
+    }
+
+    .game:nth-child(odd) .game__card {
+        flex-direction: row-reverse;
     }
 }
 
