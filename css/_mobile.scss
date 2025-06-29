@@ -122,8 +122,8 @@
     .star-two {
         width: 35px;
         height: 35px;
-        padding-top: 97px;
-        padding-left: 37px;
+        top: 97px;
+        left: 37px;
     }
 
     .star-three {
@@ -131,5 +131,30 @@
         height: 21px;
         top: 64px;
         left: 91px;
+    }
+
+    .star-five {
+        width: 18px;
+        height: 18px;
+        top: 557px;
+        left: 273px;
+    }
+
+    .star-four {
+        width: 39px;
+        height: 41px;
+        top: 580px;
+        left: 303px;
+    }
+
+    .vector {
+        display: none;
+    }
+
+    .vector-mobile {
+        display: block;
+        position: absolute;
+        left: 215px;
+        top: -80px;
     }
 }

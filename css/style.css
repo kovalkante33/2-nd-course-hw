@@ -24,6 +24,8 @@ body {
   overflow: hidden;
 }
 .header__content {
+  position: relative;
+  z-index: 2;
   max-width: 768px;
   padding-top: 196px;
 }
@@ -65,8 +67,8 @@ body {
 
 .star-two {
   position: absolute;
-  padding-top: 94px;
-  padding-left: 63px;
+  top: 94px;
+  left: 63px;
   z-index: 1;
 }
 
@@ -96,6 +98,10 @@ body {
   top: -333px;
   left: 854px;
   z-index: 1;
+}
+
+.vector-mobile {
+  display: none;
 }
 
 .content {
@@ -362,13 +368,34 @@ body {
   .star-two {
     width: 35px;
     height: 35px;
-    padding-top: 97px;
-    padding-left: 37px;
+    top: 97px;
+    left: 37px;
   }
   .star-three {
     width: 21px;
     height: 21px;
     top: 64px;
     left: 91px;
+  }
+  .star-five {
+    width: 18px;
+    height: 18px;
+    top: 557px;
+    left: 273px;
+  }
+  .star-four {
+    width: 39px;
+    height: 41px;
+    top: 580px;
+    left: 303px;
+  }
+  .vector {
+    display: none;
+  }
+  .vector-mobile {
+    display: block;
+    position: absolute;
+    left: 215px;
+    top: -80px;
   }
 }/*# sourceMappingURL=style.css.map */
