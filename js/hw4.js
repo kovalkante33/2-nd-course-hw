@@ -1,9 +1,7 @@
 // Задание 1
 // function minMax(a, b) {
-//     if (a > b) {
+//     if (a >= b) {
 //         return b
-//     } else if (a < b) {
-//         return a
 //     } else {
 //         return a
 //     }
@@ -16,7 +14,7 @@
 
 // Задание 2
 // function numbers(n) {
-//     if (n % 2 == 0) {
+//     if (n % 2 === 0) {
 //         console.log('число чётное');
 //     } else {
 //         console.log('число не чётное');
@@ -39,7 +37,7 @@
 // numberOne(4);
 // numberOne(6);
 
-// const numberTwo = m => { return m ** 2 };
+// const numberTwo = m => m ** 2 ;
 
 // console.log(numberTwo(3));
 // console.log(numberTwo(5));
@@ -77,7 +75,7 @@
 
 // Задание 6
 // function anyFunction() {
-//     // let num = prompt('Введите число');
+//     // let num = Number(prompt('Введите число'));
 //     let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 //     for (n in num) {
@@ -93,28 +91,28 @@
 // anyFunction()
 
 // Задание 7
-const circle1 = {
-    radius: 12,
-    getArea() {
-        return Math.PI * this.radius ** 2;
-    },
-    getPerimeter() {
-        return 2 * Math.PI * this.radius;
-    }
-};
+// const circle1 = {
+//     radius: 12,
+//     getArea() {
+//         return Math.PI * this.radius ** 2;
+//     },
+//     getPerimeter() {
+//         return 2 * Math.PI * this.radius;
+//     }
+// };
 
-const circle2 = {
-    radius: 34,
-    getArea() {
-        return Math.PI * this.radius ** 2;
-    },
-    getPerimeter() {
-        return 2 * Math.PI * this.radius;
-    }
-};
+// const circle2 = {
+//     radius: 34,
+//     getArea() {
+//         return Math.PI * this.radius ** 2;
+//     },
+//     getPerimeter() {
+//         return 2 * Math.PI * this.radius;
+//     }
+// };
 
-console.log(circle1.getArea());
-console.log(circle1.getPerimeter());
+// console.log(circle1.getArea());
+// console.log(circle1.getPerimeter());
 
-console.log(circle2.getArea());
-console.log(circle2.getPerimeter());
+// console.log(circle2.getArea());
+// console.log(circle2.getPerimeter());
