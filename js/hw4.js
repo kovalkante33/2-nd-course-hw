@@ -75,16 +75,13 @@
 
 // Задание 6
 // function anyFunction() {
-//     // let num = Number(prompt('Введите число'));
-//     let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//     let num = Number(prompt('Введите число'));
 
-//     for (n in num) {
-//         if (isNaN(num[n])) {
-//             console.log('Переданный параметр не является числом');
-//             return
-//         } else {
-//             console.log(`${num[n]} в кубе равняется ${num[n] ** 3}`);
-//         }
+//     if (isNaN(num)) {
+//         console.log('Переданный параметр не является числом');
+//         return
+//     } else {
+//         console.log(`${num} в кубе равняется ${num ** 3}`);
 //     }
 // }
 
