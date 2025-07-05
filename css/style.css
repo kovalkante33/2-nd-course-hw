@@ -240,6 +240,11 @@ body {
   text-align: center;
   margin: 36px 48px;
 }
+.games .game__btn:hover {
+  border: 1px solid rgb(32, 32, 39);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
 .games .game:nth-child(n+2) {
   margin-top: 32px;
 }
