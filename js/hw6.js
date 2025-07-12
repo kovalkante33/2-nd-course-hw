@@ -76,38 +76,40 @@
 // // Задание 10
 // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// for (let i = 0; i < arr.length; i++) {
+// for (let i = 0; i < arr.length - 1; i++) {
 //     console.log(arr[i] + arr[i + 1]);
 // }
 
 // // Задание 11
-// function squareElement() {
-//     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function squareElement(arr) {
 //     let array = [];
 
 //     for (let i = 0; i < arr.length; i++) {
 //         array.push(arr[i] ** 2);
-
 //     }
-//     console.log(array);
+//     return array
 // }
 
-// squareElement()
+// console.log(squareElement([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+// console.log(squareElement([10, 20, 30, 40, 50, 60, 70, 80, 90]))
 
-// // Задание 12
-// function lengthLines() {
-//     const arr = ['abcdefg', 'hijkl', 'mnopqr', 'stuvwxyz'];
+
+// Задание 12
+// function lengthLines(arr) {
 //     let array = [];
 
 //     for (let i = 0; i < arr.length; i++) {
 //         array.push(arr[i].length);
 
 //     }
-//     console.log(array);
+//     return array
 
 // }
 
-// lengthLines()
+// console.log(lengthLines(['abcdefg', 'hijkl', 'mnopqr', 'stuvwxyz']));
+// console.log(lengthLines(['абвг', 'деёжз', 'ийклмноп', 'рстуфх', 'цчшщъыьэюя']));
+
 
 // // Задание 13
 // const numbers = [1, -2, 3, -4, 5, -6, 7, -8, 9, 0];
