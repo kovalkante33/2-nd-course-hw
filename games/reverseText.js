@@ -11,7 +11,7 @@ function reverseText() {
         attempts++
 
         // Условие для остановления игры
-        if (attempts === 5 || userAnswer === 0) {
+        if (attempts === 3 || userWord === 0) {
             break
         }
     }

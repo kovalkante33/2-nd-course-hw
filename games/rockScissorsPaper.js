@@ -11,6 +11,11 @@ function rockScissorsPaper() {
         const userAnswer = prompt('Введите свой выбор - "КАМЕНЬ", "НОЖНИЦЫ", "БУМАГА" или введите "0" для прекращения игры.').toLocaleLowerCase();
         const AIAnswer = arr[Math.floor(Math.random() * arr.length)]
 
+        // Условие для остановки игры
+        if (attempts === 3 || userAnswer === 0) {
+            break
+        }
+
         if (userAnswer === AIAnswer) {
             alert('Ничья!');
             attempts++
@@ -24,11 +29,6 @@ function rockScissorsPaper() {
         } else {
             alert('Компьютер победил!');
             attempts++
-        }
-
-        // Условие для остановления игры
-        if (attempts === 5 || userAnswer === 0) {
-            break
         }
     }
 }
