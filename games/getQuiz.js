@@ -41,6 +41,3 @@ function getQuiz() {
     }
     alert(`Вы ответили правильно на ${correctAnswersCount} из ${quiz.length} вопросов!`);
 }
-
-
-getQuiz()
