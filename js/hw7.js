@@ -1,5 +1,6 @@
 // Задание 1
 let a = 'js';
+console.log('Задание 1');
 console.log(a.toLocaleUpperCase());
 
 // Задание 2
@@ -24,11 +25,13 @@ function getCoolWords(arr, word) {
     );
 }
 
+console.log('Задание 2');
 console.log(getCoolWords(arr, word));
 
 // Задание 3
 const x = 32.58884;
 
+console.log('Задание 3');
 console.log(Math.floor(x));
 console.log(Math.ceil(x));
 console.log(Math.round(x));
@@ -36,6 +39,7 @@ console.log(Math.round(x));
 // Задание 4
 const array = [52, 53, 49, 77, 21, 32];
 
+console.log('Задание 4');
 console.log(Math.min(...array));
 console.log(Math.max(...array));
 
@@ -45,6 +49,7 @@ function randomNum() {
     console.log(a);
 }
 
+console.log('Задание 5');
 randomNum()
 
 // Задание 6
@@ -62,6 +67,7 @@ function getRandomArray(n) {
     return result;
 }
 
+console.log('Задание 6');
 console.log(getRandomArray(10));
 console.log(getRandomArray(5));
 console.log(getRandomArray(0));
@@ -69,21 +75,25 @@ console.log(getRandomArray(0));
 // Задание 7
 function getRandomNumber(a, b) {
     let result = 0;
-    return result = Math.floor(Math.random(a) * b);
+    return Math.floor(Math.random() * (b - a + 1)) + a;
 }
 
+console.log('Задание 7');
 console.log(getRandomNumber(10, 5));
 console.log(getRandomNumber(14, 55));
 console.log(getRandomNumber(29, 34));
 
 // Задание 8
+console.log('Задание 8');
 console.log(new Date());
 
 // Задание 9
-const currentDate = new Date();
-const futureDate = new Date(currentDate);
-futureDate.setDate(futureDate.getDate() + 73)
+const currentDate = new Date(); // Дата начала отсчета
+const futureDate = new Date(currentDate); // Копия текущей даты для преобразований
+futureDate.setDate(futureDate.getDate() + 73) // Будущая дата через 73 дня
 
+console.log('Задание 9');
+console.log(currentDate.toDateString());
 console.log(futureDate.toDateString());
 
 // Задание 10
@@ -109,4 +119,5 @@ function formatDateRussian(date) {
     return `Дата: ${day} ${month} ${year} — это ${weekDay}.\nВремя: ${hours}:${minutes}:${seconds}`;
 }
 
+console.log('Задание 10');
 console.log(formatDateRussian(currentDate));
