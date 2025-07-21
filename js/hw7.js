@@ -74,7 +74,6 @@ console.log(getRandomArray(0));
 
 // Задание 7
 function getRandomNumber(a, b) {
-    let result = 0;
     return Math.floor(Math.random() * (b - a + 1)) + a;
 }
 
