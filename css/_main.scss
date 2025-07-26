@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     height: 800px;
     background: rgb(225, 255, 143);
@@ -176,6 +180,7 @@
 
 .games {
     background: rgb(32, 32, 39);
+    transition: background-color 0.5s ease;
 
     &__content {
         display: flex;
