@@ -63,6 +63,11 @@ btnNewHTML.addEventListener('click', function () {
 // Задание 7. Удаление элемента
 const btnDelEl = document.querySelector('.btn__del');
 
-btnDelEl.addEventListener('click', function () {
-    descriptionEl.remove();
+btnDelEl?.addEventListener('click', function () {
+    const descriptionEl = document.querySelector('.description');
+    if (descriptionEl) {
+        descriptionEl.remove();
+    } else {
+        console.log('Элемент для удаления не найден!');
+    }
 });
