@@ -17,6 +17,10 @@ body {
   padding-right: calc(50% - 600px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   height: 800px;
   background: rgb(225, 255, 143);
@@ -181,6 +185,7 @@ body {
 
 .games {
   background: rgb(32, 32, 39);
+  transition: background-color 0.5s ease;
 }
 .games__content {
   display: flex;
